@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 import gravatar from "../utils/gravatar";
 import { logoutRequest } from "../actions";
 import "../assets/styles/components/Header.scss";
@@ -13,7 +14,7 @@ const Header = (props) => {
   const isNullOrUndefined = (value) =>
     value === null || typeof value === "undefined";
 
-  const { user } = props;
+  const { user, isLogin, isRegister } = props;
   const hasUser = !isNullOrUndefined(user) && Object.keys(user).length > 0;
 
   const handleLogout = () => {
