@@ -21,8 +21,13 @@ const Header = (props) => {
     props.logoutRequest({});
   };
 
+  const headerClass = classNames("header", {
+    isLogin,
+    isRegister,
+  });
+
   return (
-    <header className="header">
+    <header className={headerClass}>
       <Link to="/">
         <img className="header__img" src={logo} alt="Platzi Video" />
       </Link>
