@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
-    "start:dev": "node src/server/index"
+    "start:dev": "nodemon src/server/index"
   },
   "keywords": [],
   "author": "",
@@ -23,13 +23,22 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.21.3",
     "express": "^4.17.1",
+    "history": "^5.0.0",
+    "ignore-styles": "^5.0.1",
     "md5": "^2.3.0",
+    "nodemon": "^2.0.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.13.0",
     "react-redux": "^7.2.1",
+    "react-router": "^5.2.0",
+    "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "webpack": "^4.44.2",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -43,7 +52,6 @@
     "mini-css-extract-plugin": "^0.11.3",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
-    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   }
